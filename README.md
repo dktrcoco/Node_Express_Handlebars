@@ -2,7 +2,7 @@
 
 This project is a burger logger that utilizes MySQL, Node, Express, Handlebars, and a homemade ORM. MVC design pattern is observed. Node and MySQL is used to query and route data into the app and Handlebars  is used to generate the HTML.
 
-Video of App in Action: https://youtu.be/dAWDrAyr6DU
+Link:
 
 Table of Contents
 * [User Story](#story)
