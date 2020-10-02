@@ -38,7 +38,7 @@ var orm = {
             if (err) {
                 throw err;
             }
-            cb(result);
+            cb(results);
         });
     },
     create: function (table, cols, vals, cb) {
@@ -53,12 +53,12 @@ var orm = {
 
         console.log(queryString);
 
-        connection.query(queryString, vals, function (err, result) {
+        connection.query(queryString, vals, function (err, results) {
             if (err) {
                 throw err;
             }
 
-            cb(result);
+            cb(results);
         });
     },
     update: function (table, objColVals, condition, cb) {
@@ -70,11 +70,11 @@ var orm = {
         queryString += condition;
 
         console.log(queryString);
-        connection.query(queryString, function (err, result) {
+        connection.query(queryString, function (err, results) {
             if (err) {
                 throw err;
             }
-            cb(result);
+            cb(results);
         });
     },
     delete: function (table, condition, cb) {
@@ -82,12 +82,12 @@ var orm = {
         queryString += "WHERE ";
         queryString += condition;
 
-        connection.query(queryString, function (err, result) {
+        connection.query(queryString, function (err, results) {
             if (err) {
                 throw err;
             }
 
-            cb(result);
+            cb(results);
         });
     }
 };
