@@ -1,6 +1,7 @@
 //Import MySQL connection
 var connection = require("../config/connection.js");
 
+//function to print question marks required for the SQL query
 function printQuestionMarks(num) {
     var arr = [];
 
@@ -10,12 +11,15 @@ function printQuestionMarks(num) {
     return arr.toString();
 }
 
+//function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
     var arr = [];
 
+    //loop through the key and push the key/value
     for (var key in ob) {
         var value = ob[key];
 
+        //if the submitted burger name has spaces, adds quotations around it
         if (Object.hasOwnProperty.call(ob, key)) {
             if (typeof value === "string" && value.indexOf(" ") >= 0) {
                 value = "'" + value + "'";
@@ -26,9 +30,10 @@ function objToSql(ob) {
     return arr.toString();
 }
 
+//Object for SQL statement functions
 var orm = {
     all: function (tableInput, cb) {
-        var queryString = "SELECT * FROM burgers;";
+        var queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function (err, results) {
             if (err) {
                 throw err;
@@ -56,7 +61,6 @@ var orm = {
             cb(result);
         });
     },
-
     update: function (table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;
 
@@ -70,11 +74,9 @@ var orm = {
             if (err) {
                 throw err;
             }
-
             cb(result);
         });
     },
-
     delete: function (table, condition, cb) {
         var queryString = "DELETE FROM " + table;
         queryString += "WHERE ";

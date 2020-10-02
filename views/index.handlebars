@@ -10,6 +10,7 @@
     {{/each}}
 </ul>
 
+{{!-- burgers that have been devoured --}}
 <h2>burgers that have been devoured</h2>
 
 <ul>
@@ -25,6 +26,14 @@
 
     <div class="form-group">
         {{!-- need ids and classes to match html --}}
+        <label for="ca">Burger Name:</label>
+        <input type="text" id="ca" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="devoured">Devour it!</label>
+        <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+        <input type="radio" name="devoured" value="0"> Not Devoured Yet!
     </div>
 
     <button type="submit">Add Burger</button>

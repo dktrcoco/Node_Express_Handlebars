@@ -19,7 +19,7 @@ var burger = {
         });
     },
     delete: function(condition, cb) {
-        orm.delete("burger", condition, function(res) {
+        orm.delete("burgers", condition, function(res) {
             cb(res);
         });
     }
