@@ -19,6 +19,18 @@ So that I can view and track burgers I've eaten and want to eat
 
 GIVEN a Heroku-deployed app that has database-stored data
 
+WHEN I run the app
+
+THEN I see the landing page for an app that tracks different burgers and whether or not they've been devoured
+
+WHEN I submit a new type of burger
+
+THEN that burger is displayed in the 'Not Devoured' list
+
+WHEN I click the 'Devour it!' button
+
+THEN that burger is displayed in the 'Devoured' list
+
 
 
 ## Images
