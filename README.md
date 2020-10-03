@@ -36,7 +36,7 @@ THEN that burger is displayed in the 'Devoured' list
 ## Images
 
 Fig. 1: Landing Page
-![Landing Page](./public/assets/img/Home.PNG)
+![Landing Page](./public/assets/img/home.PNG)
 
 Fig. 3: Example of Two Nested "connection.query"'s
 ![Nested Connection Queries Example](/NestedConnectionQueries.PNG)
