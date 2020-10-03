@@ -2,7 +2,8 @@
 //============================================================
 var express = require("express");
 
-var PORT = process.env.PORT || 8080;
+//this port needs to be different from the sql port
+var PORT = process.env.PORT || 8000;
 
 var app = express();
 

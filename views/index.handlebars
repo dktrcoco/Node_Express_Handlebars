@@ -4,20 +4,20 @@
 
 <ul>
     {{#each burgers}}
-        {{#unless devoured}}
-            {{> burgers/burger-block devour=true}}
-        {{/unless}}
+    {{#unless devoured}}
+    {{> burgers/burger-block devour=true}}
+    {{/unless}}
     {{/each}}
 </ul>
 
 {{!-- burgers that have been devoured --}}
-<h2>burgers that have been devoured</h2>
+<h2>Burgers that have been devoured</h2>
 
 <ul>
     {{#each burgers}}
-        {{#if devoured}}
-            {{> burgers/burger-block devour=false}}
-        {{/if}}
+    {{#if devoured}}
+    <li>{{burger_name}}</li>
+    {{/if}}
     {{/each}}
 </ul>
 
