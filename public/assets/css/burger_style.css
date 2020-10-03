@@ -6,3 +6,14 @@ body {
 #container {
 align-items: center;
 }
+
+.textCenter {
+    text-align: center;
+}
+
+.main {
+    background-image: url("../img/burger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
