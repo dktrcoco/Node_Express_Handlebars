@@ -1,6 +1,6 @@
 # Eat-Da-Burger!
 
-This project is a burger logger that utilizes MySQL, Node, Express, Handlebars, and a homemade ORM. MVC design pattern is observed. Node and MySQL is used to query and route data into the app and Handlebars  is used to generate the HTML.
+This project is a burger logger that utilizes MySQL, Node, Express, Handlebars, and a homemade ORM. MVC design pattern is observed. Node and MySQL is used to query and route data into the app and Handlebars is used to generate the HTML.
 
 Link:
 
@@ -35,18 +35,17 @@ THEN that burger is displayed in the 'Devoured' list
 
 ## Images
 
-Fig. 1: Code for the Main Menu Functionality
-![Primary Main Menu Function](/Primary.PNG)
-
-Fig. 2: Example of the Use of JOINS to Call Specific Data from database
-![JOINS Example](/ViewAll.PNG)
+Fig. 1: Landing Page
+![Landing Page](/Primary.PNG)
 
 Fig. 3: Example of Two Nested "connection.query"'s
 ![Nested Connection Queries Example](/NestedConnectionQueries.PNG)
 
 ## Install
 
-You need to install inquirer and mysql in order to allow prompts and interaction with the database, respectively.
+This is a heroku-deployed app, so no installation required. Simply visit the application link above to run the app.
+
+In order to run this app locally you need to clone the repo, navigate to the cloned repo directory using the command ling, type 'npm install' in the command line to install the necessary node module packages/dependencies.
 
 ## Contribution
 
@@ -54,7 +53,7 @@ If you have any contribution ideas or thoughts, please contact me via email (chr
 
 ## Testing
 
-When you are using this app, test it using Node in the command line (I used Git Bash)
+Database creation and manipulation outside of the app was done using MySQL Workbench. If you want to alter it locally, I recommend using MySQL Workbench.
 
 ## Questions
 
