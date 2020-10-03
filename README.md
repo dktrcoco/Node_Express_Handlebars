@@ -42,7 +42,7 @@ Fig. 1: Landing Page
 
 This is a heroku-deployed app, so no installation required. Simply visit the application link above to run the app.
 
-In order to run this app locally you need to clone the repo, navigate to the cloned repo directory using the command ling, type 'npm install' in the command line to install the necessary node module packages/dependencies.
+In order to run this app locally you need to clone the repo, navigate to the cloned repo directory using the command line, type 'npm install' in the command line to install the necessary node module packages/dependencies.
 
 ## Contribution
 
